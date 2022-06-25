@@ -1,0 +1,746 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_schema-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "The Herald",
+				"abbreviation": "HER",
+				"full": "The Herald",
+				"version": "1.0",
+				"authors": [
+					"Skur"
+				],
+				"convertedBy": [
+					"Skur"
+				]
+			}
+		],
+		"dateAdded": 1644264098,
+		"dateLastModified": 1644264098,
+		"_dateLastModifiedHash": "7e870b7c49"
+	},
+	"class": [
+		{
+			"name": "Herald",
+			"source": "Skur",
+			"fluff": [
+				{
+					"name": "The Herald",
+					"type": "section",
+					"entries": [
+						"Algunos, obtienen el poder de su fe en dioses, otros, de su conocimiento. Existen incluso quienes lo obtienen al nacer. También algunos mas oscuros, mediante un pacto con una entidad superior. Un heraldo es diferente, canaliza su conocimiento mágico con poderes elementales a través de su maestría marcial.",
+						{
+							"type": "entries",
+							"name": "Creando un Heraldo",
+							"entries": [
+								"Al crear un Heraldo ten en cuenta las siguientes preguntas: ¿Cual es tu manera de luchar? Un heraldo es un maestro de armas que también tiene conocimiento de como imbuirlas en poderes elementales, haciendo que los Heraldos sean variados personajes, siendo que uno no será igual al otro. ¿Donde has conseguido afinidad con los elementos? ¿Naciste con un poder especial? ¿Canalizas los elementos a través de un arduo entrenamiento?",
+								{
+									"type": "entries",
+									"name": "Quick Build",
+									"entries": [
+										""
+									]
+								}
+							]
+						}
+					],
+					"page": 2,
+					"source": "Herald"
+				}
+			],
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"con",
+				"int"
+			],
+			"startingProficiencies": {
+				"weapons": [
+					"simple",
+					"martial"
+				],
+				"tools": [
+					"{@item disguise kit|PHB}"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"athletics",
+								"history",
+								"intimidation",
+								"perception",
+								"performance",
+								"persuasion",
+								"religion"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"spellcastingAbility": "str",
+			"casterProgression": "full",
+			"preparedSpells": "<$level$> + <$int_mod$>",
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"Any {@filter martial weapon|items|source=phb|category=basic|type=martial weapon}",
+					"Any {@filter martial weapon|items|source=phb|category=basic|type=martial weapon}",
+					"A {@item dagger|phb}, and an {@item entertainer's pack|phb}"
+				],
+				"goldAlternative": "{@dice 4d4 × 10|4d4 × 10|Starting Gold}",
+				"defaultData": [
+					{
+						"a": [
+							{
+								"equipmentType": "weaponMartial"
+							}
+						]
+					},
+					{
+						"_": [
+							"dagger|phb",
+							"entertainer's pack|phb"
+						]
+					}
+				]
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"{@filter Maniobras Conocidas|spells|level=0|class=Herald}"
+					],
+					"rows": [
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						]
+					]
+				},
+				{
+					"title": "Ranura de Técnica por nivel de Técnica",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=Herald}",
+						"{@filter 2nd|spells|level=2|class=Herald}",
+						"{@filter 3rd|spells|level=3|class=Herald}",
+						"{@filter 4th|spells|level=4|class=Herald}",
+						"{@filter 5th|spells|level=5|class=Herald}",
+						"{@filter 6th|spells|level=6|class=Herald}",
+						"{@filter 7th|spells|level=7|class=Herald}",
+						"{@filter 8th|spells|level=8|class=Herald}",
+						"{@filter 9th|spells|level=9|class=Herald}"
+					],
+					"rowsSpellProgression": [
+						[
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							1,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							2,
+							2,
+							1,
+							1
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Conocimiento de Tecnicas|Herald|Skur|1",
+				"Poder Heraldico|Herald|Skur|1",
+				{
+					"classFeature": "Disciplina Marcial|Herald|Skur|2",
+					"gainSubclassFeature": true
+				},
+				"Estilo de Combate|Herald|Skur|3",
+				"Ability Score Improvement|Herald|Skur|4"
+			],
+			"subclassTitle": "Disciplina Marcial",
+			"classSpells": [
+			],
+			"cantripProgression": [
+				2,
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Conocimiento de Tecnicas",
+			"source": "Skur",
+			"page": 2,
+			"className": "Herald",
+			"classSource": "Skur",
+			"level": 1,
+			"entries": [
+				"Como una persona capaz de canalizar su poder en técnicas, sigues los siguientes principios. Las técnicas funcionan como hechizos, por lo tanto, puedes ver {@book el capítulo 10|PHB|10} para sus reglas generales.",
+				{
+					"type": "entries",
+					"name": "Maniobras",
+					"entries": [
+						"Al primer nivel, aprendes 3 maniobras de tu elección de la lista de maniobras. Aprendes maniobras adicionales de tu elección a niveles superiores, como se muestra en la columna Maniobras Conocidas de la tabla de Heraldo."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Preparar y lanzar técnicas",
+					"entries": [
+						"La tabla de Heraldo muestra cuantas ranuras de técnica tienes para realizar tus técnicas de nivel 1 o mayor. Para realizar una técnica, debes gastar una ranura de ese nivel o mayor. Recuperas todas las ranuras de técnica cuando terminas un descanso largo.",
+						"Preparas la lista de técnicas que tienes disponible para lanzar seleccionando desde la lista de técnicas del Heraldo. Cuando lo haces, selecciona una cantidad de técnicas igual a tu nivel + tu modificador de inteligencia (minimo de 1 técnica). Las técnicas deben ser de un nivel para el que tengas ranuras disponibles.",
+						"Por ejemplo, si eres un heraldo de 3er nivel, tienes disponible 4 ranuras de técnica de nivel 1 y 3 de nivel 2. Con una Inteligencia de 16, tu lista de técnicas preparadas puede incluir seis técnicas de nivel 1 o 2, en cualquier combinación.",
+						"Puedes cambiar tu lista de técnicas preparadas cuando terminas un descanso largo."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Habilidad para lanzar técnicas",
+					"entries": [
+						"Al obtener esta habilidad al primer nivel, debes elegir entre Destreza o Fuerza. Tu habilidad elegida es la habilidad para lanzar técnicas. sas tu habilidad elegida cada vez que una técnica se refiere a tu habilidad para lanzar técnicas. En adición, usas el modificador de tu habilidad elegida cuando ajustas la Clase de Dificultad de una tirada de salvación (o DC) para una técnica que lanzas y cuando haces un ataque con estas.",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"str"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"str"
+							]
+						}
+					]
+				}
+			]
+		},
+		{				
+			"name": "Poder Heraldico",
+			"source": "Skur",
+			"page": 2,
+			"className": "Herald",
+			"classSource": "Skur",
+			"level": 1,
+			"entries": [
+				"Cuando seleccionas esta clase, sabes como canalizar tu poder para hacer un Arma Heráldica.",
+				"Al obtener este rasgo, seleccionas una arma a dos manos o dos armas de una mano y un arma a distancia. Esta Arma puede transformarse como acción bonus en una daga, tu arma elegida cuerpo a cuerpo o tu arma elegida a distancia. Las armas elegidas cuerpo a cuerpo pueden utilizarse como componente somático para realizar técnicas, sin embargo, si cambias a tu arma a distancia debes tener una mano libre para hacer componentes somáticos.",
+				{
+					"type": "entries",
+					"name": "Nivel 1",
+					"entries": [
+						"Al haber entrenado como canalizar tu poder a través de tu arma, obtienes las siguientes características:",
+						{
+							"type": "list",
+							"style": "list-hang",
+							"items": [
+								{
+									"type": "item",
+									"name": "Negación",
+									"entry": "Tu Arma no reacciona bien con la armadura y no puedes llevarla. Sin embargo, tu extenso entrenamiento te enseñó como analizar a los enemigos y predecir sus ataques. Tu cálculo de AC se vuelve: 12 + modificador de inteligencia."
+								},
+								{
+									"type": "item",
+									"name": "Afiliación",
+									"entry": "Cuando no utilizas tu arma heráldica, tienes desventaja en todo ataque que hagas."
+								},
+								{
+									"type": "item",
+									"name": "Localización",
+									"entry": "Siempre sabes donde esta tu arma heráldica, no importa la distancia."
+								},
+								{
+									"type": "item",
+									"name": "Atracción",
+									"entry": "Mientras no esté a mas de 60 pies, puedes usar tu acción bonus para hacerla desaparecer y aparecer en tu mano."
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Disciplina Marcial",
+			"source": "Skur",
+			"page": 3,
+			"className": "Herald",
+			"classSource": "Skur",
+			"level": 2,
+			"entries": [
+				"Cuando llegas al 2do nivel, eliges un Camino que representará la forma en que tus técnicas y estilo de combate se reflejan en el mundo. Puedes elegir entre Despertar Salvaje, Bailarín del Filo, Gravedad Cero y Cazador. Tu elección te otorga beneficios al 2do nivel, 6to, 10mo, 14vo y 18vo."
+			]
+		},
+		{
+			"name": "Estilo de Combate",
+			"source": "Skur",
+			"page": 72,
+			"srd": true,
+			"basicRules": true,
+			"className": "Herald",
+			"classSource": "Skur",
+			"level": 3,
+			"entries": [
+				"Al llegar al 3er nivel, puedes elegir un estilo de combate que determinará la forma en la que luchas.",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Archery"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Defense"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Dueling"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Great Weapon Fighting"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Protection"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Two-Weapon Fighting"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Blind Fighting|TCE"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Interception|TCE"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Superior Technique|TCE"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Thrown Weapon Fighting|TCE"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Unarmed Fighting|TCE"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Skur",
+			"page": 4,
+			"className": "Herald",
+			"classSource": "Skur",
+			"level": 4,
+			"entries": [
+				"Cuando alcanzas el 4to nivel, puedes aumentar una puntuación de habilidad de tu elección en 2, o puedes aumentar dos puntuaciones de habilidad de tu elección en 1. Como es normal, no puedes aumentar una puntuación a más de 20 usando esta característica.",
+				"De otra manera, en lugar de aumentar una puntuación, puedes elegir una {@5etools feat|feats.html}."
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Wild Awakening",
+			"source": "Skur",
+			"page": 4,
+			"className": "Herald",
+			"classSource": "Skur",
+			"subclassShortName": "Wild",
+			"subclassSource": "Skur",
+			"level": 2,
+			"entries": [
+				"The mesmers dedicated to the Domination Magic use skills and spells that disrupt their foes while dealing damage. These mesmers also are focused on punishing their foes for undertaking actions.",
+				"Mesmers using Domination Magic focus on shutting down their enemies as much as they can.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Frenesí Primal|Herald|Skur|Wild|Skur|2"
+				}
+			]
+		},
+		{
+			"name": "Frenesí Primal",
+			"source": "Skur",
+			"page": 4,
+			"className": "Herald",
+			"classSource": "Skur",
+			"subclassShortName": "Wild",
+			"subclassSource": "Skur",
+			"level": 2,
+			"header": 2,
+			"entries": [
+				"Al nivel 2, puedes gastar una acción para entrar en Frenesí por 1 minuto. Cuando entras en frenesí, obtienes los siguientes beneficios:",
+				"Ganas 1d4 de vida temporal.",
+				"Tu velocidad aumenta en 5 pies.",
+				"Obtienes una altura de salto igual a la mitad de tu velocidad de movimiento.",
+				"Una vez utilices este frenesí, no podrás volver a usarlo hasta tu siguiente descanso largo."
+			]
+		},
+		{
+			"name": "Blade Dancer",
+			"source": "Skur",
+			"page": 5,
+			"className": "Herald",
+			"classSource": "Skur",
+			"subclassShortName": "Dancer",
+			"subclassSource": "Skur",
+			"level": 2,
+			"entries": [
+				"Los Bailarines del Filo luchan con una elegancia propia del baile. Este tipo de entrenamiento los hace letales armas de combate que pueden adaptarse a distintas situaciones.",
+				"No te confíes por la belleza del baile, dudar en contra del filo podría ser mortal.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Danza de espadas|Herald|Skur|Dancer|Skur|2"
+				}
+			]
+		},
+		{
+			"name": "Danza de espadas",
+			"source": "Skur",
+			"page": 5,
+			"className": "Herald",
+			"classSource": "Skur",
+			"subclassShortName": "Dancer",
+			"subclassSource": "Skur",
+			"level": 2,
+			"header": 2,
+			"entries": [
+				"Eligiendo esta subclase al nivel 2, obtienes pericia en Actuación. Además, eliges otro estilo de combate de cualquier lista. Como acción bonus, puedes cambiar de estilo de combate y tu Arma Heráldica para adaptarse al estilo nuevo."
+			]
+		},
+		{
+			"name": "Filos Perdidos",
+			"source": "Skur",
+			"page": 5,
+			"className": "Herald",
+			"classSource": "Skur",
+			"subclassShortName": "Dancer",
+			"subclassSource": "Skur",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Alcanzando el nivel 6, cada vez que fluyes entre armas obtienes 1d4 de vida temporal hasta un máximo igual a tu modificador de inteligencia, y la próxima vez que ataques a un enemigo después de cambiar, tienes +1 en la tirada de ataque y de daño.", 
+				"Además, aprendes otro estilo de combate adicional y otro elemento de Aclimatación adicional."
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Wild Awakening",
+			"shortName": "Wild",
+			"source": "Skur",
+			"page": 4,
+			"subclassFeatures": [
+				"Frenesí Primal|Herald|Skur|Wild|Skur|2"
+			],
+			"className": "Herald",
+			"classSource": "Skur"
+		},
+		{
+			"name": "Blade Dancer",
+			"shortName": "Dancer",
+			"source": "Skur",
+			"page": 5,
+			"subclassFeatures": [
+				"Danza de espadas|Herald|Skur|Dancer|Skur|2",
+				"Filos Perdidos|Herald|Skur|Dancer|Skur|6"
+			],
+			"className": "Herald",
+			"classSource": "Skur"
+		}
+	]
+}
